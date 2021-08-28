@@ -1,0 +1,40 @@
+package com.example.testebsintegration.secure;
+
+public enum EbsAttributes {
+    USERORSSWAPORTALURL("_USERORSSWAPORTALURL"),
+    FUNCTION_ID("FUNCTION_ID"),
+    NODE_ID("NODE_ID"),
+    RESPONSIBILITY_APPLICATION_ID("RESPONSIBILITY_APPLICATION_ID"),
+    USER_ID("USER_ID"),
+    SECURITY_GROUP_ID("SECURITY_GROUP_ID"),
+    NLS_DATE_LANGUAGE("NLS_DATE_LANGUAGE"),
+    LIMIT_CONNECTS("LIMIT_CONNECTS"),
+    DISABLED_FLAG("DISABLED_FLAG"),
+    PROXY_USER_ID("PROXY_USER_ID"),
+    RESPONSIBILITY_ID("RESPONSIBILITY_ID"),
+    NLS_NUMERIC_CHARACTERS("NLS_NUMERIC_CHARACTERS"),
+    FIRST_CONNECT("FIRST_CONNECT"),
+    LIMIT_TIME("LIMIT_TIME"),
+    LAST_CONNECT("LAST_CONNECT"),
+    LANGUAGE_CODE("LANGUAGE_CODE"),
+    MODE_CODE("MODE_CODE"),
+    MAC_KEY("MAC_KEY"),
+    SESSION_ID("SESSION_ID"),
+    ORG_ID("ORG_ID"),
+    NLS_TERRITORY("NLS_TERRITORY"),
+    NLS_SORT("NLS_SORT"),
+    DATE_FORMAT_MASK("DATE_FORMAT_MASK"),
+    COUNTER("COUNTER"),
+    NLS_LANGUAGE("NLS_LANGUAGE"),
+    HOME_URL("HOME_URL");
+
+    EbsAttributes(String attribute){
+        this.attribute=attribute;
+    }
+    private String attribute;
+
+    public String getAttribute() {
+        return this.attribute;
+
+    }
+}
